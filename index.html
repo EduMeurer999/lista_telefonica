@@ -1,0 +1,29 @@
+<html ng-app="listaTelefonica">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .jumbotron{
+            width: 100%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    </style>
+<!--    <script src="angular-1.7.8/angular.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script>
+        angular.module("listaTelefonica", []); // [] = conjunto de modulos a importar ex: ng table, etc
+        angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function () {
+           $scope.app = "lista telefonica";
+        });
+    </script>
+</head>
+<body ng-controller="listaTelefonicaCtrl">
+    <div>
+        <h4 ng-bind="app"></h4>
+    </div>
+</body>
+</html>
